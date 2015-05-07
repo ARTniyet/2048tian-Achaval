@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>2048TIAN ACHAVAL</title>
+
+  <link href="style/main.css" rel="stylesheet" type="text/css">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="apple-touch-icon" href="meta/apple-touch-icon.png">
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone 5+ -->
+  <link rel="apple-touch-startup-image" href="meta/apple-touch-startup-image-640x920.png"  media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)"> <!-- iPhone, retina -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui">
+
+  
+
+</head>
+<body>
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+
+
+  <div class="container">
+    <div >
+      <h1 style="text-align:center;font-size:2.9em"><i style="color:orange;">2048</i>TIAN ACHAVAL</h1>
+	  <p style="text-align:center;">Join tangueros and get to <strong>ACHAVAL!</strong></p>
+    </div>
+	<div class="scores-container">
+        <div class="score-container">0</div>
+        <div class="best-container">0</div>
+		<a class="restart-button new-tanda">New Tanda</a>
+      </div>
+    <div class="above-game">
+      
+      
+	  
+    </div>
+
+    <div class="game-container">
+      <div class="game-message">
+        <p></p>
+        <div class="lower">
+	        <a class="keep-playing-button">ESSSAAA!!!</a>
+          <a class="retry-button">Cabeceo again!</a>
+        </div>
+      </div>
+
+      <div class="grid-container">
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+        <div class="grid-row">
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+          <div class="grid-cell"></div>
+        </div>
+      </div>
+
+      <div class="tile-container">
+
+      </div>
+    </div>
+	<div style="text-align:center;margin-top:1em;">Share with your friends!<br>
+	
+		<a href="https://twitter.com/share" style="margin-bottom:0px;" class="twitter-share-button" data-text="2048 Tango game! Achaval should check this out!" data-size="large" data-hashtags="tangomore">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+	  	&nbsp; or &nbsp;
+		<div class="fb-share-button" data-href="http://tangomore.com/2048/" data-layout="button_count"></div>
+	</div>
+    <p class="game-explanation">
+      <strong class="important">How to play:</strong> Use your <strong>arrow keys</strong> to move tangueros. When two tiles with the same tangueros touch, they <strong>merge into one new tanguero!</strong>
+    </p>
+	<p>Please keep in mind that the hierarchy of tangueros that is used in this game  is just for fun! If you don't like, simply don't play it.</p>
+	<hr>
+    <p>
+    Modified by <a href="http://baris.im" target="_new">Baris Oztekin.</a>. Brought to you by <a href="http://tangomore.com" target="_new">TANGOMORE.COM | Worldwide Tango Events Calendar.</a>
+    </p>
+	<hr>
+	<div class="legends">
+		<ul>
+			<li>Me as 2<img src="imgs/2-me.jpg"></img></li>
+			<li>Sercan Yiğit as 4<img src="imgs/4-sercan.jpg"></img></li>
+			<li>Alper Ergökmen as 8<img src="imgs/8-alper.jpg"></img></li>
+			<li>Ney Melo as 16<img src="imgs/16-ney.jpg"></img></li>
+			<li>Noelia Hurtado as 32<img src="imgs/32-noelia.jpg"></img></li>
+			<li>Carlitos Espinoza as 64<img src="imgs/64-carlitos.jpg"></img></li>
+			<li>Sebastian Jimenez as 128<img src="imgs/128-jimenez.jpg"></img></li>
+			<li>Moira Castellano as 256<img src="imgs/256-moira.jpg"></img></li>
+			<li>Chicho Frumboli as 512<img src="imgs/512-chicho.jpg"></img></li>
+			<li>Sebastian Arce as 1024<img src="imgs/1024-arce.jpg"></img></li>
+			<li>Sebastian Achaval as 2048<img src="imgs/2048-achaval.jpg"></img></li>
+			
+		</ul>
+	</div>
+  </div>
+
+  <script src="js/bind_polyfill.js"></script>
+  <script src="js/classlist_polyfill.js"></script>
+  <script src="js/animframe_polyfill.js"></script>
+  <script src="js/keyboard_input_manager.js"></script>
+  <script src="js/html_actuator.js"></script>
+  <script src="js/grid.js"></script>
+  <script src="js/tile.js"></script>
+  <script src="js/local_storage_manager.js"></script>
+  <script src="js/game_manager.js"></script>
+  <script src="js/application.js"></script>
+</body>
+</html>
